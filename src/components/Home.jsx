@@ -131,7 +131,7 @@ const Index = () => {
           <Line className="line" />
           <div className="group">
             <img src={Mail} alt="Icon" />
-            info@brizenmore.com
+            info@brixenmore.com
           </div>
         </Info>
         <div>
