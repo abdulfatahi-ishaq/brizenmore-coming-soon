@@ -319,7 +319,7 @@ export const Whatsapp = styled(WhatsappImage)`
   }
 
   @media screen and (max-width: 900px) {
-    bottom: 3rem;
+    bottom: 4rem;
     right: 2rem;
   }
 `;
