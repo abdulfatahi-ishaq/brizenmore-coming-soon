@@ -10,7 +10,7 @@ export default styled.div`
   );
   margin: 0;
   height: 100vh;
-  width:100vw;
+  max-width:100vw;
   overflow:none !important;
   padding: 3rem 1rem 1rem 5rem;
   color: #fff;
@@ -69,7 +69,7 @@ export const Logo = styled.img`
 `;
 
 export const Heading = styled.div`
-  width: 100%;
+  max-width: 100vw;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@ export const Heading = styled.div`
 `;
 
 export const Form = styled.form`
-  width: 100%;
+  max-width: 100vw;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;

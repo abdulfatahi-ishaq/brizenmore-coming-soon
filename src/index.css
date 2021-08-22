@@ -2,7 +2,7 @@ body, html {
   overflow:none !important;
   margin: 0;
   padding:0;
-  background: url('./assets/images/background.png');
+  background: url('./assets/images/background1.png');
   background-repeat: no-repeat;
   background-size:cover;
   font-family: 'Ubuntu', sans-serif;
