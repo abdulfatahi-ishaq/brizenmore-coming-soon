@@ -225,8 +225,6 @@ export const Form = styled.form`
     cursor: pointer;
     :hover {
       transition: 0.2s all ease-in-out;
-      color: #fcd7ad;
-      background-color: #2d506c;
     }
 
     @media screen and (max-width: 900px) {
