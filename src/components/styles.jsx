@@ -9,9 +9,9 @@ export default styled.div`
     rgba(0, 0, 0, 0.5) 90%
   );
   margin: 0;
-  height: 100vh;
-  max-width:100vw;
-  overflow:none !important;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: none !important;
   padding: 3rem 1rem 1rem 5rem;
   color: #fff;
 
@@ -37,7 +37,8 @@ export default styled.div`
     }
   }
   @keyframes jump {
-    ${'' /* 0% {
+    ${
+      '' /* 0% {
       bottom: 0;
     }
     50% {
@@ -59,7 +60,8 @@ export default styled.div`
     }
     100% {
       bottom: 0;
-    } */}
+    } */
+    }
   }
 `;
 
@@ -126,7 +128,7 @@ export const Heading = styled.div`
     }
 
     @media screen and (max-width: 350px) {
-      font-size: 0.7em;
+      font-size: 0.6em;
     }
   }
 `;
@@ -317,25 +319,21 @@ export const Whatsapp = styled(WhatsappImage)`
 
   @media screen and (max-width: 900px) {
     bottom: 3rem;
-    right:2rem;
+    right: 2rem;
   }
 `;
 
 export const Footer = styled.div`
-  position: absolute;
-  width:100%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.8em;
   font-weight: normal;
   font-style: normal;
   text-align: center;
-  left: 50%;
-  bottom: 0;
+  margin-top: 4rem;
 
-  @media screen and (max-width: 900px) {
-    ${'' /* margin:auto; */}
-    transform: 0;
-    left:auto;
-    bottom:1rem;
+  @media screen and (max-width:900px){
+    margin-top:2rem;
   }
 `;

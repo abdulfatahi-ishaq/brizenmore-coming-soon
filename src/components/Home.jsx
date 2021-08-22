@@ -22,8 +22,13 @@ import StatusModal from './Modal';
 import { Spin } from 'antd';
 import 'antd/dist/antd.css';
 import { LoadingOutlined } from '@ant-design/icons';
+import "aos/dist/aos.css"
+import Aos from 'aos';
 
 const Index = () => {
+  React.useEffect(() => {
+    Aos.init({ duration: 4000 })
+  })
   const antIcon = (
     <LoadingOutlined style={{ fontSize: 26, color: '#2d506c' }} spin />
   );
@@ -64,7 +69,7 @@ const Index = () => {
     <>
       <Container>
         <Logo src={LogoImage} alt="Logo" />
-        <Heading>
+        <Heading data-aos="zoom-in" data-aos-duration="3000">
           <h1>
             we are coming <span>very soon!</span>
           </h1>
@@ -74,7 +79,7 @@ const Index = () => {
             among the first to know when our website is up!
           </p>
         </Heading>
-        <Form onSubmit={sendMail}>
+        <Form onSubmit={sendMail} data-aos="zoom-in" data-aos-duration="3000">
           <div>
             <input
               type="text"
@@ -99,21 +104,21 @@ const Index = () => {
           </button>
           {/* <span>Our privacy policy covers*</span> */}
         </Form>
-        <SocialIcons>
-          <a href="www.facebook.com">
+        <SocialIcons data-aos="fade-up" data-aos-duration="3000">
+          <a href="https://www.facebook.com/brixenmore/">
             <img src={Facebook} alt="Social Icon" />
           </a>
-          <a href="www.instragam.com">
+          <a href="https://instagram.com/brixenmore">
             <img src={Instagram} alt="Social Icon" />
           </a>
-          <a href="www.linkedin.com">
+          <a href="https://www.linkedin.com/company/brixenmore-properties-limited">
             <img src={Linkedin} alt="Social Icon" />
           </a>
-          <a href="www.twitter.com">
+          <a href="https://twitter.com/brixenmore?s=11">
             <img src={Twitter} alt="Social Icon" />
           </a>
         </SocialIcons>
-        <Info>
+        <Info data-aos="fade-up" data-aos-duration="3000">
           <div className="group">
             <img src={Phone} alt="Icon" />
             012797542 &nbsp;&nbsp;&nbsp; +2349093496941

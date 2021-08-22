@@ -1,5 +1,6 @@
 {
   "name": "coming-soon",
+  "homepage": "https://brixenmore.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.12",
+    "aos": "^2.3.4",
     "axios": "^0.21.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
