@@ -298,8 +298,8 @@ export const Info = styled.div`
 
 export const Whatsapp = styled(WhatsappImage)`
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 3rem;
   cursor: pointer;
 
   :hover {
