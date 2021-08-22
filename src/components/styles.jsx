@@ -9,7 +9,9 @@ export default styled.div`
     rgba(0, 0, 0, 0.5) 90%
   );
   margin: 0;
-  min-height: 100vh;
+  height: 100vh;
+  width:100vw;
+  overflow:none !important;
   padding: 3rem 1rem 1rem 5rem;
   color: #fff;
 
@@ -18,10 +20,24 @@ export default styled.div`
   }
 
   .effect {
-    animation: jump 3s infinite;
+    animation-name: zoom-in-zoom-out;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
   }
   @keyframes jump {
-    0% {
+    ${'' /* 0% {
       bottom: 0;
     }
     50% {
@@ -43,7 +59,7 @@ export default styled.div`
     }
     100% {
       bottom: 0;
-    }
+    } */}
   }
 `;
 
@@ -291,7 +307,8 @@ export const Whatsapp = styled(WhatsappImage)`
   }
 
   @media screen and (max-width: 900px) {
-    bottom: 3rem;
+    bottom: 5rem;
+    right:2rem;
   }
 `;
 

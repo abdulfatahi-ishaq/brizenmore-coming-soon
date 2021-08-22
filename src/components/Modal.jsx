@@ -26,8 +26,8 @@ const StatusModal = (props) => {
 export default StatusModal;
 
 const Container = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   opacity: 1;
   display: flex;
   padding: 2rem 0;
