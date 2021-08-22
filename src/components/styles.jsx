@@ -324,7 +324,7 @@ export const Whatsapp = styled(WhatsappImage)`
 export const Footer = styled.div`
   position: absolute;
   width:100%;
-  ${'' /* transform: translate(-50%, -50%); */}
+  transform: translate(-50%, -50%);
   font-size: 0.8em;
   font-weight: normal;
   font-style: normal;
