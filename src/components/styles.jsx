@@ -16,6 +16,35 @@ export default styled.div`
   @media screen and (max-width: 1100px) {
     padding: 2rem 1rem;
   }
+
+  .effect {
+    animation: jump 3s infinite;
+  }
+  @keyframes jump {
+    0% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 140px;
+      height: 140px;
+    }
+    55% {
+      bottom: 160px;
+      height: 120px;
+      border-radius: 70px / 60px;
+    }
+    65% {
+      bottom: 120px;
+      height: 140px;
+      border-radius: 70px;
+    }
+    95% {
+      bottom: 0;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
 `;
 
 export const Logo = styled.img`
@@ -259,6 +288,10 @@ export const Whatsapp = styled(WhatsappImage)`
 
   :hover {
     transform: scale(1.3);
+  }
+
+  @media screen and (max-width: 900px) {
+    bottom: 3rem;
   }
 `;
 
