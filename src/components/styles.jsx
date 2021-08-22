@@ -334,8 +334,12 @@ export const Footer = styled.div`
   text-align: center;
   margin-top: 7rem;
 
-  @media screen and (max-width:900px){
+  @media screen and (max-width:450px){
+    position:absolute;
+    padding-left:2.5em;
+    bottom:1rem;
+    float:center;
     font-size: 0.8em;
-    margin-top:3rem;
+    ${'' /* margin-top:3rem; */}
   }
 `;
