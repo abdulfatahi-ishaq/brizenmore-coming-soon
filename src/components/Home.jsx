@@ -54,7 +54,7 @@ const Index = () => {
     }
   };
 
-  const handleShow = () =>{
+  const handleShow = () => {
     setVisible(false);
     setFullname('');
     setEmail('');
@@ -71,7 +71,7 @@ const Index = () => {
           <p>
             Kindly join our mailing list to get{' '}
             <span>premium real estate tips</span> and deals. You’ll also be{' '}
-       among the first to know when our website is up!
+            among the first to know when our website is up!
           </p>
         </Heading>
         <Form onSubmit={sendMail}>
@@ -95,8 +95,8 @@ const Index = () => {
             </button>
           </div>
           <button className="mobile-button" type="submit">
-              {loading ? <Spin indicator={antIcon} /> : 'get notified!'}
-            </button>
+            {loading ? <Spin indicator={antIcon} /> : 'get notified!'}
+          </button>
           {/* <span>Our privacy policy covers*</span> */}
         </Form>
         <SocialIcons>
@@ -129,10 +129,12 @@ const Index = () => {
             info@brizenmore.com
           </div>
         </Info>
-        <a href="https://wa.me/09093496941">
-          {' '}
-          <Whatsapp />
-        </a>
+        <div>
+          <a href="https://wa.me/09093496941">
+            {' '}
+            <Whatsapp className="effect"/>
+          </a>
+        </div>
         <Footer>
           &copy; copyright 2021 brixenmore properties. all rights reserved
         </Footer>
