@@ -9,6 +9,7 @@ export default styled.div`
     rgba(0, 0, 0, 0.5) 90%
   );
   margin: 0;
+  height:100vh;
   max-height: 100vh;
   max-width: 100vw;
   overflow: none !important;
@@ -127,7 +128,7 @@ export const Heading = styled.div`
       padding: 0;
     }
 
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 360px) {
       font-size: 0.6em;
     }
   }
@@ -327,13 +328,14 @@ export const Footer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: normal;
   font-style: normal;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 7rem;
 
   @media screen and (max-width:900px){
-    margin-top:2rem;
+    font-size: 0.8em;
+    margin-top:3rem;
   }
 `;

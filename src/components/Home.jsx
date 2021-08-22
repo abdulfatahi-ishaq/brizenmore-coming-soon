@@ -135,7 +135,7 @@ const Index = () => {
           </div>
         </Info>
         <div>
-          <a href="https://wa.me/09093496941">
+          <a href="https://wa.me/message/C4GEAR4MRBCED1">
             {' '}
             <Whatsapp className="effect"/>
           </a>
