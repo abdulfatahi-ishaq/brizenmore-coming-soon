@@ -77,6 +77,7 @@ export const Heading = styled.div`
 
     @media screen and (max-width: 900px) {
       font-size: 0.8em;
+      padding: 0 0;
     }
   }
 `;
