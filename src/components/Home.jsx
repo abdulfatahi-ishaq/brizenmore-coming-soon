@@ -39,7 +39,7 @@ const Index = () => {
         setLoading(true);
         Axios({
           method: 'POST',
-          url: 'http://localhost:3019/send-mail',
+          url: 'https://agile-waters-03012.herokuapp.com/send-mail',
           data: { fullname: fullname, email: email },
           headers: {
             'Content-Type': 'application/json',
@@ -52,6 +52,12 @@ const Index = () => {
         console.log(err);
       }
     }
+  };
+
+  const handleShow = () =>{
+    setVisible(false);
+    setFullname('');
+    setEmail('');
   };
 
   return (
@@ -72,6 +78,7 @@ const Index = () => {
           <div>
             <input
               type="text"
+              value={fullname}
               placeholder="Full Name"
               onChange={(e) => setFullname(e.target.value)}
             />
@@ -79,6 +86,7 @@ const Index = () => {
           <div className="group">
             <input
               type="email"
+              value={email}
               placeholder="Enter your email address"
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -129,7 +137,7 @@ const Index = () => {
           &copy; copyright 2021 brixenmore properties. all rights reserved
         </Footer>
       </Container>
-      <StatusModal show={visible} handleShow={() => setVisible(false)} />
+      <StatusModal show={visible} handleShow={handleShow} />
     </>
   );
 };
