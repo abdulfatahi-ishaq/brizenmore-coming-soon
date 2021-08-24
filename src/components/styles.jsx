@@ -9,7 +9,7 @@ export default styled.div`
     rgba(0, 0, 0, 0.5) 90%
   );
   margin: 0;
-  height:100vh;
+  height: 100vh;
   max-height: 100vh;
   max-width: 100vw;
   overflow: none !important;
@@ -116,7 +116,6 @@ export const Heading = styled.div`
     font-size: 1em;
     line-height: 26px;
     text-align: center;
-    text-transform: lowercase;
     padding: 0 32%;
     margin: 0;
     span {
@@ -145,13 +144,6 @@ export const Form = styled.form`
 
   @media screen and (max-width: 900px) {
     row-gap: 0.8em;
-  }
-  span {
-    padding: 0;
-    text-align: left;
-    margin: 0;
-    font-size: 0.6em;
-    color: #fcd7ad;
   }
   .group {
     display: flex;
@@ -187,7 +179,23 @@ export const Form = styled.form`
     :focus {
       background: #fff;
       color: #2d4f6c;
-      opacity: 100;
+      opacity: 1;
+
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: silver;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: silver;
+      }
+
+      ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: silver;
+      }
     }
     ::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -246,7 +254,19 @@ export const Form = styled.form`
     }
   }
 `;
+export const PrivacyText = styled.p`
+margin-top:1rem;
+  display: flex;
+  width: 41%;
+  justify-content: flex-end;
+  font-size: 0.8em;
+  color: #fcd7ad;
 
+  @media screen and (max-width:900px){
+    font-size: 0.8em;
+    margin-left:2rem;
+  }
+`;
 export const SocialIcons = styled.div`
   margin-top: 4rem;
   display: flex;
@@ -326,18 +346,19 @@ export const Footer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: normal;
   font-style: normal;
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 6rem;
+  text-transform: uppercase;
 
-  @media screen and (max-width:450px){
-    position:absolute;
-    padding-left:2.5em;
-    bottom:1rem;
-    float:center;
-    font-size: 0.8em;
+  @media screen and (max-width: 450px) {
+    position: absolute;
+    padding-left: 2.5em;
+    bottom: 1rem;
+    float: center;
+    font-size: 0.6em;
     ${'' /* margin-top:3rem; */}
   }
 `;

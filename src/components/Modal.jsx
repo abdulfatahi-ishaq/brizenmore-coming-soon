@@ -8,13 +8,18 @@ const StatusModal = (props) => {
   const { show, handleShow } = props;
   return (
     <Modal
-    centered={true}
+      width={400}
+      centered={true}
       closable={false}
       visible={show}
       footer={false}
+      bodyStyle={{ border: 'none', padding:0 }}
     >
       <Container>
+      <div className="img-wrapper">
+
         <img src={Checkmark} alt="Icon" />
+      </div>
         <h4>Thank You!</h4>
         <span>You have been added to the waitlist.</span>
         <button onClick={handleShow}>return back to home</button>
@@ -26,19 +31,28 @@ const StatusModal = (props) => {
 export default StatusModal;
 
 const Container = styled.div`
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   opacity: 1;
   display: flex;
-  padding: 2rem 0;
+  padding:0 0 2rem;
   flex-direction: column;
-  row-gap:1rem;
+  row-gap: 1rem;
   align-items: center;
   justify-content: center;
-
+  ${'' /* background-color: green; */}
+  .img-wrapper{
+    width:100%;
+    padding:3rem 0;
+    background: #3C5970;
+    opacity:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
   img {
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
   }
 
   h4 {

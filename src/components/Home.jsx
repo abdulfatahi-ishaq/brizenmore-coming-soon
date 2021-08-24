@@ -9,6 +9,7 @@ import Container, {
   SocialIcons,
   Whatsapp,
   Footer,
+  PrivacyText,
 } from './styles';
 import Facebook from '../assets/images/fb_icon.svg';
 import Instagram from '../assets/images/ig_icon.svg';
@@ -102,8 +103,8 @@ const Index = () => {
           <button className="mobile-button" type="submit">
             {loading ? <Spin indicator={antIcon} /> : 'get notified!'}
           </button>
-          {/* <span>Our privacy policy covers*</span> */}
         </Form>
+        <PrivacyText data-aos="fade-up" data-aos-duration="3000">Our privacy policy covers *</PrivacyText>
         <SocialIcons data-aos="fade-up" data-aos-duration="3000">
           <a href="https://www.facebook.com/brixenmore/">
             <img src={Facebook} alt="Social Icon" />
@@ -126,7 +127,7 @@ const Index = () => {
           <Line className="line" />
           <div className="group">
             <img src={Address} alt="Icon" />
-            3rd Floor Mulliner Towers, 39 Alfred Rewane Road, Ikoyi- Lagos
+            7th Floor Mulliner Towers, 39 Alfred Rewane Road, Ikoyi- Lagos
           </div>
           <Line className="line" />
           <div className="group">
